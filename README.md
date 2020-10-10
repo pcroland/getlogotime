@@ -10,8 +10,8 @@ install -D -m 755 <(curl -fsSL git.io/JTUWM) ~/.local/bin/getlogotime
 ```sh
 getlogotime input logo
 ```
-The inputs can be any file with an audio in it that ffmpeg can process.\
-The logo can be a file or a folder containing files.
+The inputs can be any audio (or video with audio inside) file ffmpeg can process.\
+For the logo you can specify a single file or a folder containing the intro/logo files.
 ## Examples
 `getlogotime input.mp2 introsound.wav`
 `getlogotime input.ac3 logofolder`
