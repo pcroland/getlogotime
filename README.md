@@ -5,7 +5,7 @@ It exits when the first match happens and override the timestamp with zeros if n
 ![image](https://i.kek.sh/fdDz4wuwPbA.gif)
 ## Installation
 ```sh
-https://github.com/pcroland/getlogotime
+git clone https://github.com/pcroland/getlogotime
 cd getlogotime
 pip install -r requirements.txt
 cp getlogotime.py ~/.local/bin/getlogotime
