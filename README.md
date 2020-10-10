@@ -1,11 +1,16 @@
 # Audio event detection
 The script is modified from [craigfrancis/audio-detect](https://github.com/craigfrancis/audio-detect).\
 I removed most of the code, there's just a single line terminal output with the progress.\
-It exits when the first match happens and override the timestamp with zeros if no match is found.
+It exits when the first match happens and override the timestamp with zeros if no match is found.\
 ![image](https://i.kek.sh/fdDz4wuwPbA.gif)
 ## Installation
 ```sh
-install -D -m 755 <(curl -fsSL git.io/JTUWM) ~/.local/bin/getlogotime
+https://github.com/pcroland/getlogotime
+cd getlogotime
+pip install -r requirements.txt
+cp getlogotime.py ~/.local/bin/getlogotime
+chmod +x ~/local/bin/getlogotime
+hash -r
 ```
 ## Usage
 ```sh
