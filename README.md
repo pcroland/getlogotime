@@ -1,5 +1,5 @@
 # Audio event detection
-The script is modified from [url](https://github.com/craigfrancis/audio-detect).\
+The script is modified from [](https://github.com/craigfrancis/audio-detect).\
 I removed most of the code, there's just a single line terminal output with the progress.\
 It exits when the first match happens and override the timestamp with zeros if no match is found.
 ## Installation
