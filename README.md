@@ -2,6 +2,7 @@
 The script is modified from [craigfrancis/audio-detect](https://github.com/craigfrancis/audio-detect).\
 I removed most of the code, there's just a single line terminal output with the progress.\
 It exits when the first match happens and override the timestamp with zeros if no match is found.\
+\
 ![image](https://i.kek.sh/fdDz4wuwPbA.gif)
 ## Installation
 ```sh
