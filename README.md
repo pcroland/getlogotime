@@ -2,6 +2,7 @@
 The script is modified from [craigfrancis/audio-detect](https://github.com/craigfrancis/audio-detect).\
 I removed most of the code, there's just a single line terminal output with the progress.\
 It exits when the first match happens and override the timestamp with zeros if no match is found.
+![image](https://i.kek.sh/fdDz4wuwPbA.gif)
 ## Installation
 ```sh
 install -D -m 755 <(curl -fsSL git.io/JTUWM) ~/.local/bin/getlogotime
@@ -21,4 +22,3 @@ If you want to use `getlogotime`-s output in an ffmpeg command, you can do for e
 logotime=$(getlogotime input.mp2 logo.wav)
 ffmpeg -i input.mp2 -ss ${logotime##*$'\r'} -c copy kek.mp2
 ```
-![image](https://i.kek.sh/fdDz4wuwPbA.gif)
