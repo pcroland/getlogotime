@@ -20,7 +20,7 @@ getlogotime input logo
 The inputs can be any audio (or video with audio inside) file ffmpeg can process.\
 For the logo you can specify a single file or a folder containing the intro/logo files.
 ## Examples
-`getlogotime input.mp2 introsound.wav`
+`getlogotime input.mp2 introsound.wav`\
 `getlogotime input.ac3 logofolder`
 ## bash/zsh implementation
 If you want to use `getlogotime`-s output in an ffmpeg command, you can do for example:
