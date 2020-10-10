@@ -5,7 +5,7 @@ It exits when the first match happens and override the timestamp with zeros if n
 \
 ![image](https://i.kek.sh/fdDz4wuwPbA.gif)
 ## Installation
-```sh
+```bash
 git clone https://github.com/pcroland/getlogotime
 cd getlogotime
 pip install -r requirements.txt
@@ -24,7 +24,7 @@ For the logo you can specify a single file or a folder containing the intro/logo
 `getlogotime input.ac3 logofolder`
 ## bash/zsh implementation
 If you want to use `getlogotime`-s output in an ffmpeg command, you can do for example:
-```sh
+```bash
 logotime=$(getlogotime input.mp2 logo.wav)
 ffmpeg -i input.mp2 -ss ${logotime##*$'\r'} -c copy kek.mp2
 ```
