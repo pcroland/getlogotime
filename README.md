@@ -25,6 +25,6 @@ For the logo you can specify a single file or a folder containing the intro/logo
 ## bash/zsh implementation
 If you want to use `getlogotime`-s output in an ffmpeg command, you can do for example:
 ```bash
-logotime=$(getlogotime input.mp2 logo.wav)
-ffmpeg -i input.mp2 -ss ${logotime##*$'\r'} -c copy kek.mp2
+logotime=$(getlogotime input.mp2 logo.wav | tr '\r' '\n' | tail -1)
+ffmpeg -i input.mp2 -ss "$logotime" -c copy kek.mp2
 ```
