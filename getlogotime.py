@@ -26,8 +26,6 @@ def stft_raw(series, sample_rate, win_length, hop_length, hz_count, dtype):
     lpad = int((n_fft - n) // 2)
     lengths = [(0, 0)] * fft_window.ndim
     lengths[axis] = (lpad, int(n_fft - n - lpad))
-    if lpad < 0:
-        raise ParameterError(('Target size ({:d}) must be at least input size ({:d})').format(n_fft, n))
     fft_window = np.pad(fft_window, lengths, mode='constant')
     fft_window = fft_window.reshape((-1, 1))
     series = np.pad(series, int(n_fft // 2), mode=pad_mode)
